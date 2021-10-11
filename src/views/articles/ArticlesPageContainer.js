@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, Fragment } from "react";
+import React, { createContext, useEffect } from "react";
 import { request } from 'services/network/Network.service';
 import { ActionTypes } from 'store/articles/Articles.actions';
 import { ArticleReducer, ArticleInitialState } from 'store/articles/Articles.reducers';
@@ -26,17 +26,18 @@ export default function ArticlesPageContainer(props) {
                     payload: articles
                   });
                 }).catch((error) =>
+                
                     console.log(error)
                 );
         }
     }, [state]);
-  
+
     const ArticlesModule = (
         <ArticlesContext.Provider value={[state, dispatch]}>
           <ArticlesPage {...state} />
         </ArticlesContext.Provider>
     );
     
-    return (state.loading === true) ? ArticlesModule : <Loader />;
+    return (state.completed === true) ? ArticlesModule : <Loader />;
 };
 

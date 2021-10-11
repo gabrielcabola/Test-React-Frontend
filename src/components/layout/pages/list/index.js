@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 import ItemList from 'components/layout/pages/itemList';
@@ -10,12 +10,13 @@ function List(props) {
       {articles.map((article, i) => {
         return (
           <ItemList key={i} item={article}>
-             <Link
+            <Link
             key={article.model}
-            className={`h-12 flex items-center  border-white cursor-pointer no-underline`}
+            className={`articleLink`}
             to={`/article/${article.model}`}
           >
-            {article.model}
+              <h2>{article.model}</h2>
+              <h3>{article.manufacturer}</h3>
             </Link>
           </ItemList>
         );

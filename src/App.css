@@ -46,15 +46,33 @@ section.List {
 
 section.List > article {
   display: flex;
+  max-width: 50%;
   flex: 1;
   flex-direction: row
 }
 
+section.List > article > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+section.List > article > a > h2, section.List > article > a > h3 {
+  margin: 0;
+  padding: 0;
+}
+section.List > article > a:hover {
+  cursor: pointer;
+  color: rgb(92, 92, 92);
+  
+}
 .thumbImage {
   width: 210px;
   height: 150px;
   border-radius: 6px;
   margin: 10px;
+  vertical-align:middle;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 .thumbImage > img {
   height: auto;

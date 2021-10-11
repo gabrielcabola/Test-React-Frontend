@@ -5,6 +5,7 @@ export const ArticleInitialState = {
   articles: [],
   articleViewActive: null,
   loading: false,
+  completed: false,
   gridSize: 10,
 };
 
@@ -20,7 +21,8 @@ export const ArticleReducer = (state, action) => {
             return {
                 ...state,
               articles: action.payload,
-              loading: true
+              loading: true,
+              completed: true,
             };
       case  ActionTypes.ACTIVE_ARTICLE:
           return {

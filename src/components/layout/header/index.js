@@ -3,7 +3,7 @@ import React from "react";
 function Header(props) {
   return (
     <section className="Header">
-      <h1>Articles</h1>
+      <h1>Articles App</h1>
       {props.children}
     </section>
   );

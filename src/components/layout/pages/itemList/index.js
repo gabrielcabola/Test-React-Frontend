@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { withRouter } from "react-router";
-import ThumbImage from 'components/layout/thumbImage';
+import ThumbImage from 'components/layout/pages/thumbImage';
 
 function ItemList(props) {
   const { item } = props;

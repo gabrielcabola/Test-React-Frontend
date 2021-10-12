@@ -4,6 +4,7 @@ import { ActionTypes } from 'store/articles/Articles.actions';
 import { ArticleReducer, ArticleInitialState } from 'store/articles/Articles.reducers';
 import Loader from "components/loader/Loader";
 import ArticlesPage from "views/articles/ArticlesPage";
+import { log } from 'services/logger/Logger.service';
 
 // Create Context Object
 export const ArticlesContext = createContext();
@@ -25,9 +26,7 @@ export default function ArticlesPageContainer(props) {
                     type: ActionTypes.COMPLETE,
                     payload: articles
                   });
-                }).catch((error) =>
-                
-                    console.log(error)
+                }).catch((error) => log('fetchArticlesError',error)
                 );
         }
     }, [state]);

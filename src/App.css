@@ -77,19 +77,45 @@ section.List > article > a:hover {
   color: rgb(92, 92, 92);
   
 }
+
 .thumbImage {
   width: 210px;
   height: 150px;
   border-radius: 6px;
   margin: 10px;
   vertical-align:middle;
-
 }
 .thumbImage > img {
   height: auto;
   max-width: 100%;
   max-height: 100%;
   mix-blend-mode: multiply;
+}
+
+.fullImage {
+  width: 100%;
+  padding: 70px 0;
+  height: auto;
+  border-radius: 6px;
+  margin: 10px;
+  vertical-align:middle;
+}
+.fullImage > img {
+  max-height: 700px;
+  max-width: 100%;
+  max-height: auto;
+  mix-blend-mode: multiply;
+}
+
+.backButton {
+  border: 2px solid grey;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  float: left;
+  margin: 20px;
 }
 
 @keyframes blink-animation {

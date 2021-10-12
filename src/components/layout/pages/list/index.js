@@ -1,6 +1,4 @@
 import React from "react";
-import { withRouter } from "react-router";
-import { Link } from "react-router-dom";
 import ItemList from 'components/layout/pages/itemList';
 
 function List(props) {
@@ -9,15 +7,7 @@ function List(props) {
     <section className="List">
       {articles.map((article, i) => {
         return (
-          <ItemList key={i} item={article}>
-            <Link
-            key={article.model}
-            className={`articleLink`}
-            to={`/article/${article.model}`}
-          >
-              <h2>{article.model}</h2>
-              <h3>{article.manufacturer}</h3>
-            </Link>
+          <ItemList key={i} index={i} item={article}>
           </ItemList>
         );
        })}
@@ -25,4 +15,4 @@ function List(props) {
   );
 }
 
-export default withRouter(List);
+export default List;

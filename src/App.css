@@ -63,13 +63,14 @@ section.List > article > a {
   cursor: pointer;
   text-decoration: none;
   color: black;
-  text-align: left;
+  
 
 }
 section.List > article > a > h2, section.List > article > a > h3 {
   margin: 0;
   font-size: 1.1rem;
   padding: 0 10px;
+  text-align: left;
 }
 section.List > article > a > h3 { opacity: 0.4;}
 section.List > article > a:hover {
@@ -101,7 +102,7 @@ section.List > article > a:hover {
   vertical-align:middle;
 }
 .fullImage > img {
-  max-height: 700px;
+  max-height: 900px;
   max-width: 100%;
   max-height: auto;
   mix-blend-mode: multiply;

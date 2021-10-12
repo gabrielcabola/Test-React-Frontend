@@ -23,7 +23,7 @@ export const ArticleReducer = (state, action) => {
               loading: true,
               completed: true,
             };
-      default:
-          throw new Error();
+    default:
+      return { ...ArticleInitialState };
   }
 };

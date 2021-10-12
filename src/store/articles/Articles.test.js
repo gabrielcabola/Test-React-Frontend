@@ -2,12 +2,12 @@ describe('ArticlesReducersName', () => {
   beforeEach(() => {
     // Init a new state
   })
-  describe('ACTION', () => {
+  describe('INIT', () => {
     // Group tests by action type
     it('should test action with some params', () => {})
     it('should test action with other params', () => {})
   })
-  describe('SECOND_ACTION', () => {
+  describe('COMPLETE', () => {
     it('should test action with some params', () => {})
   })
 })

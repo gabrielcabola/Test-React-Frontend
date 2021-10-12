@@ -6,7 +6,7 @@ const baseUrl = process.env.REACT_APP_BACKEND_API_URL;
 export const request = async (method, endpoint, payload) => {
   const api = axios.create({
     baseURL: baseUrl,
-    timeout: 900,
+    timeout: 1500,
   });
   switch (method) {
     case 'GET':

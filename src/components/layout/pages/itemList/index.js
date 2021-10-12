@@ -1,5 +1,4 @@
 import React from "react";
-import { withRouter } from "react-router";
 import ThumbImage from 'components/layout/pages/thumbImage';
 import { Link } from "react-router-dom";
 
@@ -21,4 +20,4 @@ function ItemList(props) {
   );
 }
 
-export default withRouter(ItemList);
+export default ItemList;

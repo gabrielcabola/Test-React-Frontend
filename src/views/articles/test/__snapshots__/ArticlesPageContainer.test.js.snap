@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticlesPageContainer /> renders correctly 1`] = `
+<div
+  className="Loading"
+>
+  <div
+    className="loadingio-spinner-rolling-8tt3fggefq8"
+    id="Loader"
+  >
+    <div
+      className="ldio-xpemuty8dbl"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;

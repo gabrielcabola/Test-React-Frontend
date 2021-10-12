@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Loader from './Loader';
 
-test('Renders Loader', () => {
+test('Renders Loader Component', () => {
   render(<Loader />);
-  const element = screen.getByText(/Loading/i);
-  expect(element).toBeInTheDocument();
+  const loader = document.getElementById('Loader');
+  expect(loader).toBeInTheDocument();
 });
+
+/**
+ * TODOS:
+ * 
+ * Test using snapshots
+ */
+

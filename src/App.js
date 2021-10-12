@@ -9,7 +9,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Header />
       <BrowserRouter>
       <Switch>
         <Route exact path="/" component={ArticlesPageContainer} />

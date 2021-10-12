@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react';
-import List from './List';
+import React from "react";
+import renderer from 'react-test-renderer';
+import List from './';
+import { articles } from 'services/network/__mocks__/axios';
+import { BrowserRouter } from "react-router-dom";
 
-test('Renders List', () => {
-  render(<Loader />);
-  const element = screen.getByText(/List/i);
-  expect(element).toBeInTheDocument();
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<BrowserRouter><List {...articles}  /></BrowserRouter>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

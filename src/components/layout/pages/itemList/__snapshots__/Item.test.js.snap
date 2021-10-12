@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<article>
+  <a
+    className="articleLink"
+    href="/article/1/135317.jpg"
+    onClick={[Function]}
+  >
+    <div
+      className="thumbImage"
+    >
+      <img
+        src="https://thumbs.static-thomann.de/thumb/thumb120x/pics/prod//135317.jpg"
+      />
+    </div>
+    <h2>
+      C40
+    </h2>
+    <h3>
+      Yamaha
+    </h3>
+  </a>
+</article>
+`;

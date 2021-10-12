@@ -3,7 +3,6 @@ import { ActionTypes } from 'store/articles/Articles.actions';
 
 export const ArticleInitialState = {
   articles: [],
-  articleViewActive: null,
   loading: false,
   completed: false,
   gridSize: 10,
@@ -24,11 +23,6 @@ export const ArticleReducer = (state, action) => {
               loading: true,
               completed: true,
             };
-      case  ActionTypes.ACTIVE_ARTICLE:
-          return {
-              ...state,
-              articleViewActive: action.payload
-          };
       default:
           throw new Error();
   }

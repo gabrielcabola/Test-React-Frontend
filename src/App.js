@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
       <Switch>
         <Route exact path="/" component={ArticlesPageContainer} />
-        <Route path="/articles" component={ArticlesPageContainer} />
+          <Route path="/articles" component={ArticlesPageContainer} />
           <Route path="/article/:id/:file" component={ArticleShowPage} />
          </Switch>
       </BrowserRouter>
